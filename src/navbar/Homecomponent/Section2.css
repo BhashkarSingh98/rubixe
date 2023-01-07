@@ -1,0 +1,59 @@
+.sec2{
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+}
+.sec-box1{
+    height: 300px;
+    width: 50%;
+
+}
+.content1{
+    width: 70%;
+  float: right;
+  margin-top: 40px;
+
+}
+.content1 span{
+    font-size: 25px;
+
+}
+.content2{
+    width: 70%;
+  float: right;
+  margin-top: 20px;
+
+}
+.content2 span{
+
+}
+.content3{
+    width: 70%;
+  float: right;
+  margin-top: 20px;
+
+}
+.content3 span{
+
+}
+.sec-box2{
+    height: 300px;
+    width: 50%;
+
+}
+.sec-img{
+    height: 200px;
+    width: 350px;
+    margin-left: 10%;
+    margin-top: 70px;
+}
+.blank-box{
+    height: 100px;
+    width: 300px;
+    background-color: rgba(0, 128, 0, 0.671);
+    margin-left:17.9% ;
+    margin-top: -60px;
+    position: relative;
+
+   
+}
