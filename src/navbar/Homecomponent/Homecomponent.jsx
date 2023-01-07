@@ -7,8 +7,8 @@ const Homecomponent = () => {
       <div className="homebox">
         <div className="homebox1">
           <div className="homebox1img1">
-            <p className="homebox1img1-p1">Title of vertical gallery</p>
-            <p className="homebox1img1-p2">Traval/August 21 2022</p>
+            <p className="homebox1img1-p1">TITLE OF VERTICAL GALLREY</p>
+            <p className="homebox1img1-p2">RUBIXE/August 21 2022</p>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ const Section6 = () => {
     <div>
         <div className="sec6">
             <div className="footer">
-                <span>footer</span>
+                <span>Made With <span style={{color:"red"}}> ❤</span> By a Designer</span>
             </div>
         </div>
     </div>

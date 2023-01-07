@@ -22,7 +22,7 @@ const Update = () => {
   },[]);
 
   const getproductdet = async () => {
-    let result = await fetch(`https://calm-red-zebra-gear.cyclic.app/user/${params.id}`);
+    let result = await fetch(`https://calm-red-zebra-gear.cyclic.app/product/${params.id}`);
     result = await result.json();
 
     console.log(result);
@@ -36,7 +36,7 @@ const Update = () => {
 
   const updateproduct = async () => {
     console.log(name, mobileno, email, state, city, description);
-    let result = await fetch(`https://calm-red-zebra-gear.cyclic.app/user/${params.id}`, {
+    let result = await fetch(`https://calm-red-zebra-gear.cyclic.app/product/${params.id}`, {
       method: "Put",
       body: JSON.stringify({
         name,
@@ -60,7 +60,7 @@ const Update = () => {
     <div className="registration">
       <div className="from-box-1"></div>
       <div className="login-box-2">
-        <h1 className="register1">REGISTRATION</h1>
+        <h1 className="register1">UPDATE</h1>
         <form onSubmit={updateproduct}>
 
           <label for="name" className="label1">Name : </label>
