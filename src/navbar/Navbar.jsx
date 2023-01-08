@@ -8,6 +8,8 @@ import Login from './Login';
 import Addblog from './Addblog';
 import Newblog from './Newblog';
 import Update from './Update';
+import Services from './Services';
+import Career from './Career';
 
 const Navbar = () => {
   return (
@@ -20,7 +22,9 @@ const Navbar = () => {
         {/* <Route path='/' element={<Mainnavbar/>}> */}
         <Route  path="/"  element={<Home/>} />
         <Route path='/update/:id' element={<Update/>}/>
-        <Route path='/addblog' element={<Addblog/>}/>
+        <Route path='/register' element={<Addblog/>}/>
+        <Route path='/services' element={<Services/>}/>
+        <Route path='/career' element={<Career/>}/>
         <Route path='/list' element={<Newblog/>}/>
         </Route>
         <Route path='/signup' element={<Signup/>}/>

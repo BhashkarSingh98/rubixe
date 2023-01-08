@@ -6,7 +6,7 @@ const Logo = () => {
     <>
       <div className="logo">
         <div className="logo1">
-          <div className="logo2"><img height="50px" src="/images/white-rubixe-logo.png" alt="" /></div>
+          <div className="logo2"><img height="45px" src="/images/white-rubixe-logo.png" alt="" /></div>
           
         </div>
         {/* <Burger/> */}

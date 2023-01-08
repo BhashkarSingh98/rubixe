@@ -66,7 +66,10 @@
 .delete1{
     margin-left: -40px;
     margin-top: 25px;
+    cursor: pointer;
+    
 }
+
 .searchblog1{
     width: 200px;
     position: relative;

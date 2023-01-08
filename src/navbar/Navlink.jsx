@@ -43,7 +43,7 @@ const Navlink = () => {
                       </NavLink>
                     </li>
                     <li id="l8">
-                      <NavLink className="a" id="a8" to="/addblog">
+                      <NavLink className="a" id="a8" to="/register">
                         REGISTER
                       </NavLink>
                     </li>
@@ -80,7 +80,7 @@ const Navlink = () => {
                     </li>
                   </ul>
                 </div>
-                <hr />
+               
               </div>
             )}
           </div>

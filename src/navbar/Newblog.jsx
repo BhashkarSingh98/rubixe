@@ -1,4 +1,3 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
@@ -14,15 +13,20 @@ const Newblog = () => {
   }, []);
 
   const getproducts = async () => {
-    let result = await fetch("https://calm-red-zebra-gear.cyclic.app/registrations");
+    let result = await fetch(
+      "https://calm-red-zebra-gear.cyclic.app/registrations"
+    );
     result = await result.json();
     setproducts(result);
   };
 
   const deleteid = async (id) => {
-    let result = await fetch(`https://calm-red-zebra-gear.cyclic.app/product/${id}`, {
-      method: "Delete",
-    });
+    let result = await fetch(
+      `https://calm-red-zebra-gear.cyclic.app/product/${id}`,
+      {
+        method: "Delete",
+      }
+    );
     result = await result.json();
     if (result) {
       alert("deleted");
@@ -32,7 +36,9 @@ const Newblog = () => {
   const searchhandle = async (event) => {
     let key = event.target.value;
     if (key) {
-      let result = await fetch(`https://calm-red-zebra-gear.cyclic.app/search/${key}`);
+      let result = await fetch(
+        `https://calm-red-zebra-gear.cyclic.app/search/${key}`
+      );
       result = await result.json();
       if (result) {
         setproducts(result);
@@ -74,27 +80,36 @@ const Newblog = () => {
               <div className="article-main-box" key={item._id}>
                 <table border="1px solid black">
                   <tr>
-                    <td className="td1">{index+1}</td>
+                    <td className="td1">{index + 1}</td>
                     <td className="td2">{item.name}</td>
                     <td className="td3">{item.mobileno}</td>
                     <td className="td4">{item.email}</td>
                     <td className="td5">{item.state}</td>
-                    <td className="td6"><div className="icons">
-                  <Link to={"/update/" + item._id}>
-                    <FontAwesomeIcon className="edit1" icon={faPenToSquare} />
-                  </Link>
-                  <div className="deletebtn" onClick={() => deleteid(item._id)}>
-                    <FontAwesomeIcon className="delete1" icon={faTrashCan} />
-                  </div>
-                </div></td>
+                    <td className="td6">
+                      <div className="icons">
+                        <Link to={"/update/" + item._id}>
+                          <FontAwesomeIcon
+                            className="edit1"
+                            icon={faPenToSquare}
+                          />
+                        </Link>
+                        <div
+                          className="deletebtn"
+                          onClick={() => deleteid(item._id)}
+                        >
+                          <FontAwesomeIcon
+                            className="delete1"
+                            icon={faTrashCan}
+                          />
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                 </table>
-
-                
               </div>
             ))
           ) : (
-            <h1>no result found</h1>
+            <h3>No result found</h3>
           )}
         </div>
       </div>

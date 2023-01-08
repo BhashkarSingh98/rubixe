@@ -14,8 +14,7 @@ const Section3 = () => {
             quod praesentium. Autem necessitatibus repellendus iste maxime
             cupiditate architecto ea dolorem fuga perferendis. Rerum quis
             numquam exercitationem iste tempore culpa ullam quo quos rem.
-            Commodi fugit quasi cupiditate non? Consequuntur nihil sed vitae
-            natus, porro rem veniam ullam sit ea iure?
+            Commodi fugit quasi cupiditate non?
           </span>
         </div>
       </div>

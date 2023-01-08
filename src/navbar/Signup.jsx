@@ -1,6 +1,7 @@
 import React, { useState ,useEffect} from 'react'
 import {useNavigate} from "react-router-dom"
 import "../App.css"
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
 
@@ -32,8 +33,9 @@ const Signup = () => {
         });
         result=await result.json()
         console.log(result);
-        localStorage.setItem("user",JSON.stringify(result.result));
-        localStorage.setItem("token", JSON.stringify(result.auth));
+        alert("Registration Successfully");
+        // localStorage.setItem("user",JSON.stringify(result.result));
+        // localStorage.setItem("token", JSON.stringify(result.auth));
 
         if(result){
             navigate("/login")
@@ -41,40 +43,7 @@ const Signup = () => {
         }
     }
 
-    // const [name,setname]=useState("")
-    // const [email,setemail]=useState("")
-    // const [password,setpassword]=useState("")
-    // const navigate=useNavigate()
-
-    // useEffect(()=>{
-  
-    //   const auth=localStorage.getItem("user")
-    //   if(auth){
-    //     navigate("/")
-  
-    //   }
-  
-    // })
-
-
-
-    // const collectdata=async()=>{
-    //     console.log(name,email,password);
-    //     let result=await fetch("http://localhost:5000/register",{
-    //         method:"post",
-    //         body:JSON.stringify({name,email,password}),
-    //         headers:{
-    //             "Content-Type":"application/json"
-    //         },
-    //     });
-    //     result=await result.json()
-    //     console.log(result);
-    //     localStorage.setItem("user",JSON.stringify(result))
-    //     if(result){
-    //         navigate("/")
-
-    //     }
-    // }
+   
   return (
     <div className='box-sinup'>
         <div className="from-box-1">
@@ -86,7 +55,11 @@ const Signup = () => {
         <input type="text" required placeholder='enter email' className='inputbox' value={email} onChange={(e)=>setemail(e.target.value)}/>
         <input type="password" required placeholder='enter password' className='inputbox' value={password} onChange={(e)=>setpassword(e.target.value)}/>
         <br/>
-        <button onClick={collectdata} type='button' className='buttonsignup'>sign up</button>
+        <Link to="/login">
+          <button onClick={collectdata} type="button" className="buttonsignup">
+            sign up
+          </button>
+        </Link>
 
         </div>
     </div>

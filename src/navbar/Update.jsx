@@ -19,7 +19,7 @@ const Update = () => {
   useEffect(() => {
     console.log(params);
     getproductdet();
-  },[]);
+  },[params]);
 
   const getproductdet = async () => {
     let result = await fetch(`https://calm-red-zebra-gear.cyclic.app/product/${params.id}`);
@@ -52,7 +52,7 @@ const Update = () => {
     });
     result = await result.json();
     console.log(result);
-    navigate("/newblog");
+    navigate("/list");
   };
 
   return (
@@ -61,7 +61,6 @@ const Update = () => {
       <div className="from-box-1"></div>
       <div className="login-box-2">
         <h1 className="register1">UPDATE</h1>
-        <form onSubmit={updateproduct}>
 
           <label for="name" className="label1">Name : </label>
           <br/>
@@ -90,11 +89,10 @@ const Update = () => {
           
          <Link to="/list">
 
-          <button className="btn1" type="submit">
+          <button className="btn1" onClick={updateproduct}>
            UPDATE
           </button>
          </Link>
-        </form>
       </div>
     </div>
   </div>

@@ -22,7 +22,7 @@ const Section5 = () => {
                 <br />
                 <label>Mobile No.* </label>
                 <br />
-                <input type="text" className="input1" placeholder="Enter your Mobilr No." />
+                <input type="text" className="input1" placeholder="Enter your Mob No." />
                 <br />
                 <button className="button1">Register Now</button>
             </form>

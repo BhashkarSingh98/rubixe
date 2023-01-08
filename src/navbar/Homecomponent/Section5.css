@@ -3,7 +3,7 @@
     height: 340px;
     margin: auto;
     display: flex;
-    border: 1.5px solid black;
+    border: 1.3px solid black;
     margin-top: 40px;
     border-radius: 10px;
 
@@ -61,7 +61,7 @@
     position: relative;
     left: 67px;
     top: 35px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
    
 }

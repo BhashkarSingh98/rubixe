@@ -28,7 +28,7 @@
 }
 .sub-box1{
     height: 250px;
-    width: 170px;
+    width: 19%;
     border-radius: 10px;
     box-shadow: 10px 5px 35px #00000008;
     background-color: white;
@@ -42,12 +42,13 @@
 }
 .sub-box1 p{
     height: 70px;
-    width: 150px;
+    width: 90%;
     background-color: white;
     margin-left: 0px;
     margin: auto;
     font-size: 13px;
     padding: 5px;
     padding-top: 18px;
+    overflow: hidden;
 }
 

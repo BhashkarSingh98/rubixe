@@ -16,13 +16,6 @@ const Addblog = () => {
 
   const handeladdproduct = async () => {
     navigate("/list");
-
-    // console.log(!title);
-    // if (!imgsrc || !title || !about || !pagename || !date) {
-    //   seterror(true);
-    //   return false;
-    // }
-
     console.log(name, mobileno, email, state, city, description , image);
     const userid = JSON.parse(localStorage.getItem("user"))._id;
     console.log(userid);
