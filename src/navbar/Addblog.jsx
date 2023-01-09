@@ -17,8 +17,8 @@ const Addblog = () => {
   const handeladdproduct = async () => {
     navigate("/list");
     console.log(name, mobileno, email, state, city, description , image);
-    const userid = JSON.parse(localStorage.getItem("user"))._id;
-    console.log(userid);
+    // const userid = JSON.parse(localStorage.getItem("user"))._id;
+    // console.log(userid);
     let result = await fetch("https://calm-red-zebra-gear.cyclic.app/addproduct", {
       method: "post",
       body: JSON.stringify({ name, mobileno, email, state, city, description , image}),
